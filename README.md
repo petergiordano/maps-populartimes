@@ -8,7 +8,7 @@ Chicago-area pickleball facility traffic analysis and competitive intelligence t
 
 **If using Claude Code:**
 ```
-/status
+/checkstatus
 ```
 
 **Or run directly:**

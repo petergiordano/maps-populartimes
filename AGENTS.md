@@ -10,7 +10,7 @@ A guide for AI coding agents working on the Pickleball Competitive Intelligence 
 
 **If using Claude Code (recommended):**
 ```
-/status
+/checkstatus
 ```
 
 **Or run directly:**
@@ -73,7 +73,7 @@ python chicago_lookup.py --lat 41.8788 --lng -87.6359
 
 ### Git Workflow
 ```bash
-# Check current status (Claude Code users: use /status)
+# Check current status (Claude Code users: use /checkstatus)
 bash .specify/scripts/bash/status.sh
 
 # Start new feature
@@ -175,7 +175,7 @@ python -m py_compile visualizer.py
 
 **Claude Code:**
 ```
-/status
+/checkstatus
 ```
 
 **Terminal:**
@@ -400,7 +400,7 @@ frontend/src/
 ### "Where did we leave off?"
 **Claude Code:**
 ```
-/status
+/checkstatus
 ```
 
 **Terminal:**
@@ -478,7 +478,7 @@ npm run preview  # Preview production build locally
 
 ## Key Reminders
 
-1. **ALWAYS start new sessions with:** `/status` (Claude Code) or `bash .specify/scripts/bash/status.sh`
+1. **ALWAYS start new sessions with:** `/checkstatus` (Claude Code) or `bash .specify/scripts/bash/status.sh`
 2. **Check `todo.md` first** for current priorities
 3. **Read the spec** before implementing (`specs/[branch-name]/spec.md`)
 4. **Follow Spec Kit workflow:** spec → plan → tasks → implement
@@ -542,7 +542,7 @@ Claude Code recognizes the task context and invokes the appropriate subagent pro
 - Architecting features
 
 **Use Main Agent For:**
-- Project management (/status, git, docs)
+- Project management (/checkstatus, git, docs)
 - File reading and navigation
 - User interaction
 - Coordinating between subagents

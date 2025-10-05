@@ -4,7 +4,7 @@
 
 **If using Claude Code:**
 ```
-/status
+/checkstatus
 ```
 
 **Or run directly:**
@@ -81,7 +81,7 @@ Tell Claude: "Let's implement task #1 from the task list"
 
 ### Option 1: Use the Slash Command (Easiest)
 ```
-/status
+/checkstatus
 ```
 
 ### Option 2: Quick Status Check
@@ -119,7 +119,7 @@ Each step creates files in `specs/[feature-number]-[feature-name]/`
 ### "I just opened the project after a week"
 **In Claude Code:**
 ```
-/status
+/checkstatus
 ```
 
 **Or in terminal:**
@@ -223,7 +223,7 @@ Claude will automatically invoke the appropriate subagent.
 
 **In Claude Code (easiest):**
 ```
-/status
+/checkstatus
 ```
 
 **Or step by step in terminal:**

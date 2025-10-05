@@ -208,7 +208,7 @@ Task({
 ❌ **Don't Use Subagents For**:
 - Simple questions (use main Claude)
 - Reading files (use main Claude)
-- Running status command (use main Claude or /status)
+- Running status command (use main Claude or /checkstatus)
 - Git operations (use main Claude)
 
 ### Delegation Guidelines
@@ -302,4 +302,4 @@ Added subagent quick reference for common scenarios.
 
 **Last Updated**: 2025-10-05
 **Maintained By**: Spec Kit workflow
-**Questions?**: See `.specify/QUICK_REFERENCE.md` or run `/status`
+**Questions?**: See `.specify/QUICK_REFERENCE.md` or run `/checkstatus`

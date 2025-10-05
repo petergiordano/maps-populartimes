@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Option 1 (Easiest):**
 ```
-/status
+/checkstatus
 ```
 
 **Option 2 (Direct):**
@@ -272,7 +272,7 @@ python chicago_lookup.py --lat 41.8788 --lng -87.6359 --output results.png --no-
 
 **Using Spec Kit methodology:**
 
-1. **Check status** → `/status` (or `bash .specify/scripts/bash/status.sh`)
+1. **Check status** → `/checkstatus` (or `bash .specify/scripts/bash/status.sh`)
 2. **Start feature** → `git checkout -b 00X-feature-name`
 3. **Create spec** → `/specify` command (documents requirements)
 4. **Create plan** → `/plan` command (technical implementation)
@@ -357,7 +357,7 @@ maps-populartimes/
 
 ## 🎯 Key Reminders for New Sessions
 
-**ALWAYS start with:** `/status` (or `bash .specify/scripts/bash/status.sh`)
+**ALWAYS start with:** `/checkstatus` (or `bash .specify/scripts/bash/status.sh`)
 
 **Before implementing anything:**
 1. Check `todo.md` for current priorities
@@ -366,7 +366,7 @@ maps-populartimes/
 4. Check if tasks exist (`specs/[branch-name]/tasks.md`)
 
 **When user asks "Where did we leave off?":**
-1. Run `/status` command
+1. Run `/checkstatus` command
 2. Check todo.md
 3. Look at current git branch
 4. Read the spec for that branch if it exists
@@ -378,7 +378,7 @@ maps-populartimes/
 - **Business context** → `specs/000-project-overview/spec.md` (goals & scenarios)
 
 **Custom Claude Code slash commands:**
-- `/status` - Show comprehensive project status (custom command)
+- `/checkstatus` - Show comprehensive project status (custom command)
 - `/specify` - Create feature specification (Spec Kit)
 - `/plan` - Generate implementation plan (Spec Kit)
 - `/tasks` - Break down into actionable tasks (Spec Kit)
@@ -386,7 +386,7 @@ maps-populartimes/
 - `/analyze` - Check cross-artifact consistency (Spec Kit)
 
 **Common user requests in new sessions:**
-- "Where did we leave off?" → Run `/status`
+- "Where did we leave off?" → Run `/checkstatus`
 - "What's next?" → Check todo.md + roadmap.md
 - "What was I building?" → Check current branch spec
 - "Show me the plan" → cat specs/[branch-name]/plan.md
@@ -418,7 +418,7 @@ maps-populartimes/
 **❌ Don't use subagents for:**
 - Simple questions (use main Claude)
 - Reading files (use main Claude)
-- Running `/status` (use main Claude)
+- Running `/checkstatus` (use main Claude)
 - Git operations (use main Claude)
 
 ### How Subagents Are Invoked
