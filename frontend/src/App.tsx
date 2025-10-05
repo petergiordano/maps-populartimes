@@ -14,6 +14,10 @@ function App() {
   const [sortField, setSortField] = useState<SortField>(null)
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc')
   const [selectedFacility, setSelectedFacility] = useState<Facility | null>(null)
+  const [inspectMode, setInspectMode] = useState(false)
+  const [hoveredHour, setHoveredHour] = useState<number | null>(null)
+  const [cursorX, setCursorX] = useState<number>(0)
+  const [hoveredDay, setHoveredDay] = useState<string | null>(null)
 
   useEffect(() => {
     // Load facilities data
@@ -129,6 +133,20 @@ function App() {
 
       {/* Main Content */}
       <main className="max-w-full mx-auto px-4 py-8">
+        {/* Inspect Mode Toggle */}
+        <div className="mb-4 flex justify-end">
+          <button
+            onClick={() => setInspectMode(!inspectMode)}
+            className={`px-4 py-2 rounded-lg font-medium transition-all ${
+              inspectMode
+                ? 'bg-blue-600 text-white shadow-lg'
+                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+            }`}
+          >
+            🔍 {inspectMode ? 'Inspect Mode: ON' : 'Inspect Mode: OFF'}
+          </button>
+        </div>
+
         {/* Stats Summary */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           <div className="bg-white p-6 rounded-lg shadow">
@@ -150,9 +168,9 @@ function App() {
         </div>
 
         {/* Facilities Grid */}
-        <div className="bg-white rounded-lg shadow overflow-hidden">
+        <div className="bg-white rounded-lg shadow overflow-hidden relative">
           <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
+            <table id="facilities-table" className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
                   <th
@@ -253,7 +271,18 @@ function App() {
                       </td>
                       {sortedPopularTimes(facility).map((day) => (
                         <td key={day.name} className="px-4 py-4">
-                          <MiniGraph data={day.data} width={100} height={50} />
+                          <MiniGraph
+                            data={day.data}
+                            width={100}
+                            height={50}
+                            inspectMode={inspectMode}
+                            dayName={day.name}
+                            hoveredHour={hoveredHour}
+                            hoveredDay={hoveredDay}
+                            onHourChange={setHoveredHour}
+                            onCursorXChange={setCursorX}
+                            onDayChange={setHoveredDay}
+                          />
                         </td>
                       ))}
                     </tr>
@@ -261,6 +290,14 @@ function App() {
               </tbody>
             </table>
           </div>
+
+          {/* Global Inspect Line - spans entire table */}
+          {inspectMode && hoveredHour !== null && cursorX > 0 && (
+            <div
+              className="absolute top-0 bottom-0 w-0.5 bg-black pointer-events-none z-50"
+              style={{ left: `${cursorX}px` }}
+            />
+          )}
         </div>
       </main>
 
