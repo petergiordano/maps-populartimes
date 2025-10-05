@@ -94,17 +94,9 @@ export default function FacilityModal({ facility, allFacilities, onClose }: Faci
             <div className="text-sm text-gray-500">
               Last updated: {new Date().toLocaleDateString()}
             </div>
-            <div className="flex gap-2">
-              <button className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors">
-                📥 Export
-              </button>
-              <button className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors">
-                🔗 Share
-              </button>
-              <button className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors">
-                📝 Notes
-              </button>
-            </div>
+            <button className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded transition-colors">
+              📥 Export
+            </button>
           </div>
         </div>
       </div>
