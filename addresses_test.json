@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Grant Park",
+    "address": "337 E. Randolph St., Chicago, IL 60601",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Big City Pickle - Fulton Market",
+    "address": "170 N. Green St., Chicago, IL 60607",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Evanston - Lovelace Park",
+    "address": "2740 Gross Point Rd., Evanston, IL 60201",
+    "type": "public",
+    "location": "Suburban"
+  },
+  {
+    "name": "Northbrook - Slate Pickleball Club",
+    "address": "573 Waukegan Rd., Northbrook, IL 60062",
+    "type": "private",
+    "location": "Suburban"
+  },
+  {
+    "name": "Horner Park",
+    "address": "2741 W. Montrose Ave., Chicago, IL 60618",
+    "type": "public",
+    "location": "City of Chicago"
+  }
+]

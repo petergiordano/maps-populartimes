@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Grant Park",
+    "location": "Chicago",
+    "type": "public"
+  },
+  {
+    "name": "Horner Park",
+    "location": "Chicago",
+    "type": "public"
+  },
+  {
+    "name": "Union Park",
+    "location": "Chicago",
+    "type": "public"
+  },
+  {
+    "name": "Big City Pickle Fulton Market",
+    "location": "Chicago",
+    "type": "private"
+  },
+  {
+    "name": "Pickleball Clubhouse Chicago",
+    "location": "Chicago",
+    "type": "private"
+  },
+  {
+    "name": "Slate Pickleball Club",
+    "location": "Northbrook",
+    "type": "private"
+  },
+  {
+    "name": "SPF Chicago",
+    "location": "Chicago",
+    "type": "private"
+  },
+  {
+    "name": "Lovelace Park",
+    "location": "Evanston",
+    "type": "public"
+  }
+]

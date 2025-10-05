@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Grant Park",
+    "address": "337 E. Randolph St., Chicago, IL 60601",
+    "formatted_address": "337 E Randolph St, Chicago, IL 60601, USA",
+    "lat": 41.8773948,
+    "lng": -87.6215319,
+    "place_id": "ChIJHer2rqEsDogRjOaH7RAEdGs",
+    "type": "public",
+    "location": "City of Chicago",
+    "has_popular_times": false,
+    "fetched_at": "2025-10-05T17:03:01.889816Z",
+    "populartimes": []
+  },
+  {
+    "name": "Big City Pickle - Fulton Market",
+    "address": "170 N. Green St., Chicago, IL 60607",
+    "formatted_address": "170 N Green St, Chicago, IL 60607, USA",
+    "lat": 41.8850709,
+    "lng": -87.64897739999999,
+    "place_id": "ChIJWfjYutosDogRQhWrAKTqUwg",
+    "type": "private",
+    "location": "City of Chicago",
+    "has_popular_times": false,
+    "fetched_at": "2025-10-05T17:03:01.889816Z",
+    "populartimes": []
+  },
+  {
+    "name": "Evanston - Lovelace Park",
+    "address": "2740 Gross Point Rd., Evanston, IL 60201",
+    "formatted_address": "2740 Gross Point Rd, Evanston, IL 60201, USA",
+    "lat": 42.0679907,
+    "lng": -87.7265364,
+    "place_id": "ChIJTQ-Q0m_FD4gRbEbKQZwcaN8",
+    "type": "public",
+    "location": "Suburban",
+    "has_popular_times": false,
+    "fetched_at": "2025-10-05T17:03:01.889816Z",
+    "populartimes": []
+  },
+  {
+    "name": "Northbrook - Slate Pickleball Club",
+    "address": "573 Waukegan Rd., Northbrook, IL 60062",
+    "formatted_address": "573 S Waukegan Rd, Northbrook, IL 60062, USA",
+    "lat": 42.1450824,
+    "lng": -87.82793649999999,
+    "place_id": "ChIJOchQp8_AD4gREXpf4O6ldHs",
+    "type": "private",
+    "location": "Suburban",
+    "has_popular_times": false,
+    "fetched_at": "2025-10-05T17:03:01.889816Z",
+    "populartimes": []
+  },
+  {
+    "name": "Horner Park",
+    "address": "2741 W. Montrose Ave., Chicago, IL 60618",
+    "formatted_address": "2741 W Montrose Ave, Chicago, IL 60618, USA",
+    "lat": 41.95735800000001,
+    "lng": -87.696322,
+    "place_id": "ChIJkSl-lArSD4gR4e9mwO2K1Vs",
+    "type": "public",
+    "location": "City of Chicago",
+    "has_popular_times": false,
+    "fetched_at": "2025-10-05T17:03:01.889816Z",
+    "populartimes": []
+  }
+]

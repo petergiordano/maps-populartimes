@@ -1,0 +1,518 @@
+[
+  {
+    "name": "Armour Square Park",
+    "address": "3309 S. Shields Ave., Chicago, IL 60616",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Athletic Field Park",
+    "address": "3546 W. Addison St., Chicago, IL 60618",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Avalon Park",
+    "address": "1215 E. 83rd St., Chicago, IL 60619",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Avondale Park",
+    "address": "3516 W. School St., Chicago, IL 60618",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Bauler Park",
+    "address": "501 W. Wisconsin St., Chicago, IL 60614",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Bessemer Park",
+    "address": "8930 S. Muskegon Ave., Chicago, IL 60617",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Brands Park",
+    "address": "3285 N. Elston Ave., Chicago, IL 60618",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Brooks (Gwendolyn) Park",
+    "address": "4542 S. Greenwood Ave., Chicago, IL 60653",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Calumet Park",
+    "address": "9801 S. Avenue G, Chicago, IL 60617",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Clarendon Park Community Center",
+    "address": "4501 N. Clarendon Ave., Chicago, IL 60640",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Columbus Park",
+    "address": "500 S. Central Ave., Chicago, IL 60644",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "ComEd Recreation Center at Addams/Medill Park",
+    "address": "100,000-square-foot indoor facility in Little Italy",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Cosme Park",
+    "address": "9201 S. Longwood Dr., Chicago, IL 60620",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Dvorak Park",
+    "address": "1119 W. Cullerton St., Chicago, IL 60608",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Ellis (Samuel) Park",
+    "address": "3520 S. Cottage Grove Ave., Chicago, IL 60653",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Fernwood Park",
+    "address": "10436 S. Wallace St., Chicago, IL 60628",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Fosco Park",
+    "address": "1312 S. Racine Ave., Chicago, IL 60608",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Foster Park",
+    "address": "1440 W. 84th St., Chicago, IL 60620",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Gompers Park",
+    "address": "4222 W. Foster Ave., Chicago, IL 60630",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Grand Crossing Park",
+    "address": "7655 S. Ingleside Ave., Chicago, IL 60619",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Grant Park",
+    "address": "337 E. Randolph St., Chicago, IL 60601",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Graver Park",
+    "address": "1518 W. 102nd Pl., Chicago, IL 60643",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Hamilton Park",
+    "address": "513 W. 72nd St., Chicago, IL 60621",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Harrison Park",
+    "address": "1824 S. Wood St., Chicago, IL 60608",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Horner Park",
+    "address": "2741 W. Montrose Ave., Chicago, IL 60618",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Jackson Park",
+    "address": "6401 S. Stony Island Ave., Chicago, IL 60637",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Jefferson (Thomas) Memorial Park",
+    "address": "4822 N. Long Ave., Chicago, IL 60630",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Kennedy Park",
+    "address": "11320 S. Western Ave., Chicago, IL 60643",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Kennicott (Jonathan) Park",
+    "address": "4434 S. Lake Park Ave., Chicago, IL 60653",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Margate Park Fieldhouse",
+    "address": "4921 N. Marine Dr., Chicago, IL 60640",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "McGuane (John) Park",
+    "address": "2901 S. Poplar Ave., Chicago, IL 60608",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Rogers (Phillip) Park",
+    "address": "7345 N. Washtenaw Ave., Chicago, IL 60645",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "The School House",
+    "address": "1065 N. Orleans St., Chicago, IL 60610",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Union Park",
+    "address": "1501 W. Randolph St., Chicago, IL 60607",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Warren (Laurence) Park",
+    "address": "6601 N. Western Ave., Chicago, IL 60645",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Washington Park",
+    "address": "5531 S. King Dr., Chicago, IL 60637",
+    "type": "public",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Green Slopes Park",
+    "address": "1337 N. Belmont Ave., Arlington Heights, IL 60004",
+    "type": "public",
+    "location": "Arlington Heights"
+  },
+  {
+    "name": "Doerhoefer Park",
+    "address": "4104 Venard Rd., Downers Grove, IL 60515",
+    "type": "public",
+    "location": "Downers Grove"
+  },
+  {
+    "name": "McCollum Park",
+    "address": "6801 S. Main St., Downers Grove, IL 60516",
+    "type": "public",
+    "location": "Downers Grove"
+  },
+  {
+    "name": "Cartwright Park",
+    "address": "3250 Grant St., Evanston, IL 60201",
+    "type": "public",
+    "location": "Evanston"
+  },
+  {
+    "name": "Chandler-Newberger Community Center",
+    "address": "1028 Central St., Evanston, IL 60201",
+    "type": "public",
+    "location": "Evanston"
+  },
+  {
+    "name": "Dawes Elementary School",
+    "address": "440 Dodge Ave., Evanston, IL 60202",
+    "type": "public",
+    "location": "Evanston"
+  },
+  {
+    "name": "James Park",
+    "address": "2180 Oakton St., Evanston, IL 60202",
+    "type": "public",
+    "location": "Evanston"
+  },
+  {
+    "name": "Levy Senior Center",
+    "address": "300 Dodge Ave., Evanston, IL 60202",
+    "type": "public",
+    "location": "Evanston"
+  },
+  {
+    "name": "Lovelace Park",
+    "address": "2740 Gross Point Rd., Evanston, IL 60201",
+    "type": "public",
+    "location": "Evanston"
+  },
+  {
+    "name": "Mason Park",
+    "address": "1701 Davis St., Evanston, IL 60201",
+    "type": "public",
+    "location": "Evanston"
+  },
+  {
+    "name": "Fabbrini Park",
+    "address": "1704 Glen Lake Rd., Hoffman Estates, IL 60169",
+    "type": "public",
+    "location": "Hoffman Estates"
+  },
+  {
+    "name": "Hecht Park",
+    "address": "9310 Birch Ave., Mokena, IL 60448",
+    "type": "public",
+    "location": "Mokena"
+  },
+  {
+    "name": "Ranchview Park",
+    "address": "1727 Ranchview Dr., Naperville, IL 60565",
+    "type": "public",
+    "location": "Naperville"
+  },
+  {
+    "name": "Euclid Square Park",
+    "address": "705 Fillmore St., Oak Park, IL 60304",
+    "type": "public",
+    "location": "Oak Park"
+  },
+  {
+    "name": "Locust Park",
+    "address": "700 E. Morris Dr., Palatine, IL 60074",
+    "type": "public",
+    "location": "Palatine"
+  },
+  {
+    "name": "Schaumburg Park District Sport Center",
+    "address": "1141 W. Irving Park Road, Schaumburg, IL 60193",
+    "type": "public",
+    "location": "Schaumburg"
+  },
+  {
+    "name": "Hamlin Park",
+    "address": "7651 Hamlin Ave., Skokie, IL 60076",
+    "type": "public",
+    "location": "Skokie"
+  },
+  {
+    "name": "Laramie Park",
+    "address": "7301 Niles Center Rd., Skokie, IL 60077",
+    "type": "public",
+    "location": "Skokie"
+  },
+  {
+    "name": "Lawler Park",
+    "address": "10040 Lavergne Ave., Skokie, IL 60077",
+    "type": "public",
+    "location": "Skokie"
+  },
+  {
+    "name": "Lockwood Park",
+    "address": "Carol St., Skokie, IL 60077",
+    "type": "public",
+    "location": "Skokie"
+  },
+  {
+    "name": "Oakton Park",
+    "address": "4701 Oakton St., Skokie, IL 60076",
+    "type": "public",
+    "location": "Skokie"
+  },
+  {
+    "name": "Old Orchard Jr High School",
+    "address": "9401 Kenton Ave., Skokie, IL 60076",
+    "type": "public",
+    "location": "Skokie"
+  },
+  {
+    "name": "Walter Lauth Park",
+    "address": "8031 Keystone Ave., Skokie, IL 60076",
+    "type": "public",
+    "location": "Skokie"
+  },
+  {
+    "name": "Central Park",
+    "address": "600 S. Main St., Wheaton, IL 60187",
+    "type": "public",
+    "location": "Wheaton"
+  },
+  {
+    "name": "Big City Pickle - Fulton Market",
+    "address": "170 N. Green St., Chicago, IL 60607",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Big City Pickle - Gold Coast",
+    "address": "302 W. Walton St., Chicago, IL 60610",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Big City Pickle - Lincoln Yards",
+    "address": "1680 N. Throop St., Chicago, IL 60642",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Big City Pickle - South Loop at the 78",
+    "address": "1250 S. Wells St., Chicago, IL 60607",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Chicago Athletic Association Hotel",
+    "address": "12 S. Michigan Ave., Chicago, IL 60603",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Clark Street Pickleball",
+    "address": "2352 N. Clark St., Chicago, IL 60614",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Lakeshore Sport & Fitness - Lincoln Park",
+    "address": "1320 W. Fullerton Ave., Chicago, IL 60614",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Lakeshore Sport & Fitness - Illinois Center",
+    "address": "211 N. Stetson Ave., Chicago, IL 60601",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "McFetridge Sports Center",
+    "address": "3843 N. California Ave., Chicago, IL 60618",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Pickleball Clubhouse Chicago",
+    "address": "4242 N. Elston Ave., Chicago, IL 60618",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "SPF Chicago",
+    "address": "2121 N. Clybourn Ave., Chicago, IL 60614",
+    "type": "private",
+    "location": "City of Chicago"
+  },
+  {
+    "name": "Pickle Haus",
+    "address": "1621 S. Randall Rd., Algonquin, IL 60102",
+    "type": "private",
+    "location": "Algonquin"
+  },
+  {
+    "name": "Arlington Ridge Center",
+    "address": "660 N. Ridge Ave., Arlington Heights, IL 60004",
+    "type": "private",
+    "location": "Arlington Heights"
+  },
+  {
+    "name": "Courts Plus",
+    "address": "186 S. West Ave., Elmhurst, IL 60126",
+    "type": "private",
+    "location": "Elmhurst"
+  },
+  {
+    "name": "FFC Elmhurst",
+    "address": "140 N. Addison Ave., Elmhurst, IL 60126",
+    "type": "private",
+    "location": "Elmhurst"
+  },
+  {
+    "name": "McGaw YMCA",
+    "address": "1000 Grove St., Evanston, IL 60201",
+    "type": "private",
+    "location": "Evanston"
+  },
+  {
+    "name": "Glenview Park Center",
+    "address": "2400 Chestnut Ave., Glenview, IL 60026",
+    "type": "private",
+    "location": "Glenview"
+  },
+  {
+    "name": "Recreation Center of Highland Park",
+    "address": "1207 Park Ave. W, Highland Park, IL 60035",
+    "type": "private",
+    "location": "Highland Park"
+  },
+  {
+    "name": "Sure Shot Pickleball - Naperville",
+    "address": "Naperville, IL",
+    "type": "private",
+    "location": "Naperville"
+  },
+  {
+    "name": "Athletico Center",
+    "address": "1900 Old Willow Rd., Northbrook, IL 60062",
+    "type": "private",
+    "location": "Northbrook"
+  },
+  {
+    "name": "Glenbrook Paddle Club",
+    "address": "1835 Raymond Dr., Northbrook, IL 60062",
+    "type": "private",
+    "location": "Northbrook"
+  },
+  {
+    "name": "Slate Pickleball Club",
+    "address": "573 Waukegan Rd., Northbrook, IL 60062",
+    "type": "private",
+    "location": "Northbrook"
+  },
+  {
+    "name": "Life Time - Old Orchard",
+    "address": "5330 Old Orchard Rd., Skokie, IL 60077",
+    "type": "private",
+    "location": "Skokie"
+  },
+  {
+    "name": "Weber Leisure Center",
+    "address": "9300 Weber Park Pl., Skokie, IL 60077",
+    "type": "private",
+    "location": "Skokie"
+  },
+  {
+    "name": "Sure Shot Pickleball - Wheaton",
+    "address": "Wheaton, IL",
+    "type": "private",
+    "location": "Wheaton"
+  },
+  {
+    "name": "Wheaton Sport Center",
+    "address": "1000 W. Prairie Ave., Wheaton, IL 60187",
+    "type": "private",
+    "location": "Wheaton"
+  }
+]
