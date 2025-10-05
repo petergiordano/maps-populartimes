@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import type { Facility, FacilityWithVisibility } from './types/Facility'
 import MiniGraph from './components/MiniGraph'
+import FacilityModal from './components/FacilityModal'
 import './index.css'
 
 type SortField = 'name' | 'type' | 'rating' | 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday' | null
@@ -12,6 +13,7 @@ function App() {
   const [error, setError] = useState<string | null>(null)
   const [sortField, setSortField] = useState<SortField>(null)
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc')
+  const [selectedFacility, setSelectedFacility] = useState<Facility | null>(null)
 
   useEffect(() => {
     // Load facilities data
@@ -209,14 +211,19 @@ function App() {
                 {sortedFacilities.map((facility) => (
                     <tr
                       key={facility.id}
-                      className={`hover:bg-gray-50 ${!facility.visible ? 'opacity-40' : ''}`}
+                      className={`hover:bg-gray-50 cursor-pointer ${!facility.visible ? 'opacity-40' : ''}`}
+                      onClick={() => setSelectedFacility(facility)}
                     >
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
                           <input
                             type="checkbox"
                             checked={facility.visible}
-                            onChange={() => toggleFacility(facility.id)}
+                            onChange={(e) => {
+                              e.stopPropagation()
+                              toggleFacility(facility.id)
+                            }}
+                            onClick={(e) => e.stopPropagation()}
                             className="h-4 w-4 text-blue-600 rounded mr-3"
                           />
                           <div>
@@ -256,6 +263,15 @@ function App() {
           </div>
         </div>
       </main>
+
+      {/* Facility Detail Modal */}
+      {selectedFacility && (
+        <FacilityModal
+          facility={selectedFacility}
+          allFacilities={facilities}
+          onClose={() => setSelectedFacility(null)}
+        />
+      )}
     </div>
   )
 }
