@@ -1,0 +1,5 @@
+git+https://github.com/m-wrzr/populartimes.git
+python-dotenv
+matplotlib
+pandas
+seaborn
