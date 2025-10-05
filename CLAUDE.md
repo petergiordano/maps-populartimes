@@ -2,14 +2,49 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## 🚀 FIRST: Re-Orient Yourself (New Session Checklist)
+
+**If this is a new Claude Code session, run this FIRST:**
+```bash
+bash .specify/scripts/bash/status.sh
+```
+
+This shows:
+- Current git branch and status
+- Feature progress (what's completed vs in-progress)
+- Recommended next steps
+- Links to all documentation
+
+**Quick orientation files:**
+- `.specify/QUICK_REFERENCE.md` - Cheat sheet for common scenarios
+- `todo.md` - Lightweight task tracker (check this!)
+- `specs/000-project-overview/roadmap.md` - Master roadmap (19 features)
+
+**Workflow methodology:** This project uses **Spec Kit** (GitHub's spec-driven development framework)
+- Features are documented in `specs/` directory
+- Each feature has: spec.md (requirements) → plan.md (technical) → tasks.md (work items)
+- Slash commands: `/specify` → `/plan` → `/tasks` → `/implement`
+
+---
+
 ## Project Overview
 
-This is a Python-based tool for retrieving and visualizing Google Maps popular times data for Chicago locations. The project consists of two main components:
+**Pickleball Competitive Intelligence Platform** - Web-based tool for analyzing Google Maps popular times data across Chicago pickleball facilities, enabling competitive intelligence for Pickleball Clubhouse Chicago (4242 N. Elston).
 
-1. **CLI Tool** (`chicago_lookup.py`) - Command-line interface for querying popular times data
-2. **Visualization Module** (`visualizer.py`) - Creates various chart types (heatmaps, line charts, dashboards, comparisons)
+### Dual Architecture
 
-The codebase is currently Python-only but has a future roadmap to add a React frontend SPA for pickleball facility comparison (see `PRD_COMPARISON_GRID.md`).
+1. **Frontend (React SPA)** - Primary focus
+   - React 19 + TypeScript 5.9 + Vite 7.1
+   - Recharts for visualizations
+   - Tailwind CSS for styling
+   - Deployed to Vercel
+   - Location: `frontend/`
+
+2. **Backend (Python CLI Tools)** - Data fetching
+   - `chicago_lookup.py` - CLI for querying popular times
+   - `visualizer.py` - Creates charts (heatmaps, line charts, dashboards)
+   - Data source for React app
+   - Location: project root
 
 ## Setup & Environment
 
@@ -189,29 +224,87 @@ python chicago_lookup.py --lat 41.8788 --lng -87.6359 --output results.png --no-
 - Continues processing other locations if one fails
 - Prints user-friendly error messages
 
-## Future Development
+## Current Development Status
 
-See `PRD_COMPARISON_GRID.md` for detailed product requirements for the planned React SPA frontend. Key points:
+**✅ Phase 1 Complete:**
+- Feature 001: Facility Detail Modal (implemented)
+  - 4 visualization tabs: Heatmap, Day Comparison, Summary, Competitive
+  - Multi-format export: CSV, PNG, PDF, JSON
+  - Spec: `specs/001-facility-detail-modal/`
 
-**Planned architecture:**
-- React 18+ with TypeScript
-- Vite build tool
-- Tailwind CSS for styling
-- Chart.js or Recharts for visualizations
-- Vercel deployment
-- Optional serverless backend for API calls
+**🔜 Phase 2 Next (Critical Features):**
+- Feature 002: "My Facility" Visual Highlighting (1-2 days)
+- Feature 003: Radius Filter & Distance Display (3-4 days)
+- Feature 004: Time-Slot Opportunity Heatmap ⭐ HIGHEST VALUE (5-7 days)
 
-**Project structure will expand to:**
+**See full roadmap:** `specs/000-project-overview/roadmap.md` (19 features total)
+
+---
+
+## Deployment & Infrastructure
+
+**Frontend:**
+- Deployed to: Vercel (vercel.com)
+- Build: `npm run build` in `frontend/`
+- Output: `frontend/dist/`
+- Auto-deploy: Git push to main branch
+- URL: [Add production URL when deployed]
+
+**Data:**
+- Static JSON: `frontend/public/facilities.json`
+- Pre-fetched from Google Maps Popular Times API
+- No backend/database required for V1
+
+**Environment:**
+- No env vars needed for frontend (static data)
+- Python tools use `.env` for GOOGLE_MAPS_API_KEY
+
+---
+
+## Feature Development Workflow
+
+**Using Spec Kit methodology:**
+
+1. **Check status** → `bash .specify/scripts/bash/status.sh`
+2. **Start feature** → `git checkout -b 00X-feature-name`
+3. **Create spec** → `/specify` command (documents requirements)
+4. **Create plan** → `/plan` command (technical implementation)
+5. **Create tasks** → `/tasks` command (actionable work items)
+6. **Implement** → Work through tasks in `specs/00X-feature-name/tasks.md`
+7. **Test** → Run scenarios in `quickstart.md`
+8. **Commit** → Descriptive commits following existing patterns
+9. **Push & PR** → Push branch and create pull request
+
+**Key files per feature:**
 ```
-populartimes/
-├── frontend/          # React SPA (to be created)
+specs/00X-feature-name/
+├── spec.md          # Business requirements (what & why)
+├── plan.md          # Technical design (how)
+├── tasks.md         # Work items (actionable steps)
+├── quickstart.md    # Test scenarios (validation)
+└── contracts/       # API contracts (if applicable)
+```
+
+---
+
+## Project Structure (Updated)
+
+```
+maps-populartimes/
+├── specs/                        # Spec Kit feature documentation
+│   ├── 000-project-overview/     # Business goals & roadmap
+│   ├── 001-facility-detail-modal/ # Feature 001 spec/plan/tasks
+│   └── ...                       # Future features
+├── frontend/                     # React SPA ✅ ACTIVE
 │   ├── src/
 │   │   ├── components/
-│   │   ├── services/
-│   │   ├── types/
-│   │   └── hooks/
+│   │   │   ├── FacilityModal.tsx
+│   │   │   └── visualizations/
+│   │   ├── utils/
+│   │   │   └── exportUtils.ts
+│   │   └── types/
 │   └── public/
-│       ├── facilities.json  # User-editable facility list
+│       └── facilities.json       # Facility data
 │       └── config.json      # App configuration
 ├── backend/           # Optional serverless functions
 ├── chicago_lookup.py  # Existing CLI tool
@@ -252,3 +345,45 @@ populartimes/
 - Check API key validity
 - Verify Places API is enabled
 - Check monthly quota hasn't been exceeded
+
+---
+
+## 🎯 Key Reminders for New Sessions
+
+**ALWAYS start with:** `bash .specify/scripts/bash/status.sh`
+
+**Before implementing anything:**
+1. Check `todo.md` for current priorities
+2. Review current feature spec in `specs/[branch-name]/spec.md`
+3. Check if plan exists (`specs/[branch-name]/plan.md`)
+4. Check if tasks exist (`specs/[branch-name]/tasks.md`)
+
+**When user asks "Where did we leave off?":**
+1. Run status command
+2. Check todo.md
+3. Look at current git branch
+4. Read the spec for that branch if it exists
+
+**Documentation hierarchy:**
+- **Quick tasks** → `todo.md` (90 lines, check first)
+- **Feature details** → `specs/00X-feature-name/` (current work)
+- **Full roadmap** → `specs/000-project-overview/roadmap.md` (19 features)
+- **Business context** → `specs/000-project-overview/spec.md` (goals & scenarios)
+
+**Spec Kit slash commands available:**
+- `/specify` - Create feature specification
+- `/plan` - Generate implementation plan  
+- `/tasks` - Break down into actionable tasks
+- `/implement` - Execute implementation
+
+**Common user requests in new sessions:**
+- "Where did we leave off?" → Run status.sh
+- "What's next?" → Check todo.md + roadmap.md
+- "What was I building?" → Check current branch spec
+- "Show me the plan" → cat specs/[branch-name]/plan.md
+
+---
+
+**Last Updated**: 2025-10-05
+**Project Owner**: Peter Giordano - Pickleball Clubhouse Chicago
+**Deployment**: Vercel (vercel.com)
