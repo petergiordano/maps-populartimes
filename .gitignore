@@ -44,3 +44,6 @@ yarn-error.log*
 
 # Vite
 .vite/
+
+# Spec Kit - may contain credentials/tokens
+.claude/
