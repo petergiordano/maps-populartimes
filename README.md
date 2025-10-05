@@ -5,9 +5,17 @@ Chicago-area pickleball facility traffic analysis and competitive intelligence t
 ## 🚀 Quick Start
 
 **First time or returning after a break?**
+
+**If using Claude Code:**
+```
+/status
+```
+
+**Or run directly:**
 ```bash
 bash .specify/scripts/bash/status.sh
 ```
+
 This shows exactly where you are: current feature, git status, next steps, and documentation links.
 
 ---

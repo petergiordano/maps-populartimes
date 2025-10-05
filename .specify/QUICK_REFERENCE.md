@@ -2,6 +2,12 @@
 
 ## ⚡ Single Command to Get Oriented
 
+**If using Claude Code:**
+```
+/status
+```
+
+**Or run directly:**
 ```bash
 bash .specify/scripts/bash/status.sh
 ```
@@ -73,17 +79,22 @@ Tell Claude: "Let's implement task #1 from the task list"
 
 ## 💬 What to Tell Claude When Starting a New Session
 
-### Option 1: Quick Status Check
+### Option 1: Use the Slash Command (Easiest)
+```
+/status
+```
+
+### Option 2: Quick Status Check
 ```
 "Show me the project status and what we were working on"
 ```
 
-### Option 2: Direct Command
+### Option 3: Direct Command
 ```
 "Run: bash .specify/scripts/bash/status.sh"
 ```
 
-### Option 3: Continue Work
+### Option 4: Continue Work
 ```
 "I'm back. Where did we leave off? What's the next task?"
 ```
@@ -106,6 +117,12 @@ Each step creates files in `specs/[feature-number]-[feature-name]/`
 ## 🔍 Common Scenarios
 
 ### "I just opened the project after a week"
+**In Claude Code:**
+```
+/status
+```
+
+**Or in terminal:**
 ```bash
 bash .specify/scripts/bash/status.sh
 cat todo.md
@@ -173,6 +190,12 @@ maps-populartimes/
 
 ## 🆘 If Completely Lost
 
+**In Claude Code (easiest):**
+```
+/status
+```
+
+**Or step by step in terminal:**
 ```bash
 # Step 1: Where am I?
 bash .specify/scripts/bash/status.sh

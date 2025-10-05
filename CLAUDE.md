@@ -5,6 +5,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 🚀 FIRST: Re-Orient Yourself (New Session Checklist)
 
 **If this is a new Claude Code session, run this FIRST:**
+
+**Option 1 (Easiest):**
+```
+/status
+```
+
+**Option 2 (Direct):**
 ```bash
 bash .specify/scripts/bash/status.sh
 ```
@@ -265,7 +272,7 @@ python chicago_lookup.py --lat 41.8788 --lng -87.6359 --output results.png --no-
 
 **Using Spec Kit methodology:**
 
-1. **Check status** → `bash .specify/scripts/bash/status.sh`
+1. **Check status** → `/status` (or `bash .specify/scripts/bash/status.sh`)
 2. **Start feature** → `git checkout -b 00X-feature-name`
 3. **Create spec** → `/specify` command (documents requirements)
 4. **Create plan** → `/plan` command (technical implementation)
@@ -350,7 +357,7 @@ maps-populartimes/
 
 ## 🎯 Key Reminders for New Sessions
 
-**ALWAYS start with:** `bash .specify/scripts/bash/status.sh`
+**ALWAYS start with:** `/status` (or `bash .specify/scripts/bash/status.sh`)
 
 **Before implementing anything:**
 1. Check `todo.md` for current priorities
@@ -359,7 +366,7 @@ maps-populartimes/
 4. Check if tasks exist (`specs/[branch-name]/tasks.md`)
 
 **When user asks "Where did we leave off?":**
-1. Run status command
+1. Run `/status` command
 2. Check todo.md
 3. Look at current git branch
 4. Read the spec for that branch if it exists
@@ -370,14 +377,16 @@ maps-populartimes/
 - **Full roadmap** → `specs/000-project-overview/roadmap.md` (19 features)
 - **Business context** → `specs/000-project-overview/spec.md` (goals & scenarios)
 
-**Spec Kit slash commands available:**
-- `/specify` - Create feature specification
-- `/plan` - Generate implementation plan  
-- `/tasks` - Break down into actionable tasks
-- `/implement` - Execute implementation
+**Custom Claude Code slash commands:**
+- `/status` - Show comprehensive project status (custom command)
+- `/specify` - Create feature specification (Spec Kit)
+- `/plan` - Generate implementation plan (Spec Kit)
+- `/tasks` - Break down into actionable tasks (Spec Kit)
+- `/implement` - Execute implementation (Spec Kit)
+- `/analyze` - Check cross-artifact consistency (Spec Kit)
 
 **Common user requests in new sessions:**
-- "Where did we leave off?" → Run status.sh
+- "Where did we leave off?" → Run `/status`
 - "What's next?" → Check todo.md + roadmap.md
 - "What was I building?" → Check current branch spec
 - "Show me the plan" → cat specs/[branch-name]/plan.md

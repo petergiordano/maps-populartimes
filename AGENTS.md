@@ -7,6 +7,13 @@ A guide for AI coding agents working on the Pickleball Competitive Intelligence 
 ## 🚀 First Steps (New Session)
 
 **ALWAYS run this first when starting a new session:**
+
+**If using Claude Code (recommended):**
+```
+/status
+```
+
+**Or run directly:**
 ```bash
 bash .specify/scripts/bash/status.sh
 ```
@@ -66,7 +73,7 @@ python chicago_lookup.py --lat 41.8788 --lng -87.6359
 
 ### Git Workflow
 ```bash
-# Check current status
+# Check current status (Claude Code users: use /status)
 bash .specify/scripts/bash/status.sh
 
 # Start new feature
@@ -165,6 +172,13 @@ python -m py_compile visualizer.py
 ### Feature Development Process
 
 **1. Check Status**
+
+**Claude Code:**
+```
+/status
+```
+
+**Terminal:**
 ```bash
 bash .specify/scripts/bash/status.sh
 ```
@@ -384,6 +398,12 @@ frontend/src/
 ## Troubleshooting
 
 ### "Where did we leave off?"
+**Claude Code:**
+```
+/status
+```
+
+**Terminal:**
 ```bash
 bash .specify/scripts/bash/status.sh  # Shows current state
 cat todo.md                           # Shows current tasks
@@ -458,7 +478,7 @@ npm run preview  # Preview production build locally
 
 ## Key Reminders
 
-1. **ALWAYS start new sessions with:** `bash .specify/scripts/bash/status.sh`
+1. **ALWAYS start new sessions with:** `/status` (Claude Code) or `bash .specify/scripts/bash/status.sh`
 2. **Check `todo.md` first** for current priorities
 3. **Read the spec** before implementing (`specs/[branch-name]/spec.md`)
 4. **Follow Spec Kit workflow:** spec → plan → tasks → implement
