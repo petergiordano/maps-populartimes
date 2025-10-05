@@ -46,4 +46,6 @@ yarn-error.log*
 .vite/
 
 # Spec Kit - may contain credentials/tokens
-.claude/
+# Note: .claude/commands/ is committed for custom slash commands
+.claude/*
+!.claude/commands/
