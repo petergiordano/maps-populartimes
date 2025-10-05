@@ -1,4 +1,38 @@
-# Populartimes Chicago Lookup
+# Pickleball Competitive Intelligence Platform
+
+Chicago-area pickleball facility traffic analysis and competitive intelligence tool.
+
+## 🚀 Quick Start
+
+**First time or returning after a break?**
+```bash
+bash .specify/scripts/bash/status.sh
+```
+This shows exactly where you are: current feature, git status, next steps, and documentation links.
+
+---
+
+## Project Overview
+
+Web-based SPA for analyzing Google Maps popular times data across Chicago pickleball facilities, enabling competitive intelligence for Pickleball Clubhouse Chicago (4242 N. Elston).
+
+**Key Features:**
+- 📊 Comparison grid with mini graphs for 8+ facilities
+- 🔍 Detailed facility modal with 4 visualization tabs
+- 📤 Multi-format export (CSV, PNG, PDF, JSON)
+- 🎯 Competitive analysis & opportunity identification
+- 📈 Time-slot heatmap showing traffic gaps
+
+**Tech Stack:** React 19 + TypeScript + Vite + Recharts → Deployed on Vercel
+
+**Documentation:**
+- **Master Roadmap**: `specs/000-project-overview/roadmap.md` (19 features planned)
+- **Current Tasks**: `todo.md` (lightweight tracker)
+- **Feature Specs**: `specs/001-facility-detail-modal/` etc.
+
+---
+
+## Backend: Python Popular Times Tool
 
 Get Google Maps popular times data for Chicago addresses with beautiful visualizations.
 
