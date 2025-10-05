@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-description: Perform thorough code reviews for TypeScript/React code, enforcing project standards from AGENTS.md. Check for bugs, security issues, performance problems, and adherence to coding conventions. Use PROACTIVELY before commits or when reviewing pull requests.
+description: Perform thorough code reviews for TypeScript/React code, enforcing project standards from AGENTS.md. Check for bugs, security issues, performance problems, and adherence to coding conventions. Use PROACTIVELY when user says "ready to commit", "review this", "check my code", or before any git commit operations.
 model: sonnet
 ---
 

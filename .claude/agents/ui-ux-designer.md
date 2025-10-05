@@ -1,6 +1,6 @@
 ---
 name: ui-ux-designer
-description: Design intuitive interfaces, create accessible UX patterns, and ensure responsive layouts for the pickleball competitive intelligence platform. Expert in data visualization UX and information architecture. Use when designing new features, improving usability, or ensuring accessibility compliance.
+description: Design intuitive interfaces, create accessible UX patterns, and ensure responsive layouts for the pickleball competitive intelligence platform. Expert in data visualization UX and information architecture. Use PROACTIVELY when user asks to "design", "improve UX", "make it more user-friendly", "create wireframe", "how should this look", or any UI/UX design questions.
 model: sonnet
 ---
 

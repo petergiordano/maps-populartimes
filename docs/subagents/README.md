@@ -159,14 +159,26 @@ I need the spec-architect subagent to create a technical plan for the time-slot 
 
 ## How to Use Subagents
 
-### Method 1: Direct Request (Recommended)
-Simply mention the subagent by name in your message:
+### Automatic Invocation (Primary Method)
+
+**You don't need to do anything!** Claude Code automatically recognizes when a subagent should be used and invokes it proactively.
+
+**Examples of automatic invocation:**
+- You say: "Create a heatmap component" → Claude automatically uses **frontend-developer**
+- You say: "How should this interface look?" → Claude automatically uses **ui-ux-designer**
+- You say: "I'm ready to commit" → Claude automatically uses **code-reviewer**
+- You say: "I'm getting TypeScript errors" → Claude automatically uses **typescript-pro**
+- You say: "Write tests for this" → Claude automatically uses **test-engineer**
+- You say: "Create a technical plan" → Claude automatically uses **spec-architect**
+
+### Manual Request (Optional)
+If you want to explicitly request a specific subagent:
 
 ```
 I need help from the frontend-developer subagent to create a heatmap component
 ```
 
-Claude Code will automatically invoke the appropriate subagent via the Task tool.
+This ensures a specific subagent is used, but it's usually not necessary.
 
 ### Method 2: Explicit Task Tool (Advanced)
 For more control, Claude can use the Task tool directly:

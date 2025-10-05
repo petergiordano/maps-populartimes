@@ -507,12 +507,17 @@ Located in `.claude/agents/` directory:
 
 ### How to Use Subagents
 
-**Simply mention the subagent by name:**
-```
-I need help from the frontend-developer subagent to create a heatmap component
-```
+**Subagents are invoked automatically!** You don't need to explicitly request them.
 
-The main Claude Code agent will automatically invoke the appropriate subagent using the Task tool.
+**Just describe what you want:**
+- "Create a heatmap component" → Claude uses **frontend-developer** automatically
+- "Review this code" → Claude uses **code-reviewer** automatically
+- "How should this look?" → Claude uses **ui-ux-designer** automatically
+- "Fix these TypeScript errors" → Claude uses **typescript-pro** automatically
+- "Write tests" → Claude uses **test-engineer** automatically
+- "Create a technical plan" → Claude uses **spec-architect** automatically
+
+Claude Code recognizes the task context and invokes the appropriate subagent proactively.
 
 ### Subagent Integration with Spec Kit
 

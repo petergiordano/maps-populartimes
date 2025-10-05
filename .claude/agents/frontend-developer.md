@@ -1,6 +1,6 @@
 ---
 name: frontend-developer
-description: Build React 19 components with TypeScript, implement responsive layouts with Tailwind CSS, and integrate Recharts visualizations. Expert in our tech stack (React 19 + Vite 7.1 + Recharts 3.2). Use PROACTIVELY when creating UI components, implementing visualizations, or fixing frontend issues.
+description: Build React 19 components with TypeScript, implement responsive layouts with Tailwind CSS, and integrate Recharts visualizations. Expert in our tech stack (React 19 + Vite 7.1 + Recharts 3.2). Use PROACTIVELY when user asks to "create a component", "build a feature", "implement UI", "add visualization", "fix frontend bug", or any React/TypeScript development task.
 model: sonnet
 ---
 

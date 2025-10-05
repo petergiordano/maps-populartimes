@@ -1,6 +1,6 @@
 ---
 name: spec-architect
-description: Design technical architecture for new features based on specs. Expert in React component architecture, data flow design, and technical planning. Integrates with Spec Kit /plan workflow. Use when creating plan.md or designing feature architecture.
+description: Design technical architecture for new features based on specs. Expert in React component architecture, data flow design, and technical planning. Integrates with Spec Kit /plan workflow. Use PROACTIVELY when user runs "/plan command", asks to "create technical plan", "design architecture", or needs architecture decisions for a feature.
 model: opus
 ---
 

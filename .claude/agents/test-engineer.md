@@ -1,6 +1,6 @@
 ---
 name: test-engineer
-description: Write comprehensive tests for React components, utilities, and integration scenarios. Expert in React Testing Library, Vitest, and E2E testing. Ensures code quality through test coverage. Use when implementing new features, debugging issues, or improving test coverage.
+description: Write comprehensive tests for React components, utilities, and integration scenarios. Expert in React Testing Library, Vitest, and E2E testing. Ensures code quality through test coverage. Use PROACTIVELY when user asks to "write tests", "add test coverage", "test this component", or after implementing any new feature that needs testing.
 model: sonnet
 ---
 

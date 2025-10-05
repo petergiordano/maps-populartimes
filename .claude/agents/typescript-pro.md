@@ -1,6 +1,6 @@
 ---
 name: typescript-pro
-description: Advanced TypeScript expert for complex type challenges, generic components, type guards, and utility types. Master of TypeScript 5.9 features and strict mode compliance. Use when dealing with complex typing scenarios, Recharts type issues, or advanced TypeScript patterns.
+description: Advanced TypeScript expert for complex type challenges, generic components, type guards, and utility types. Master of TypeScript 5.9 features and strict mode compliance. Use PROACTIVELY when user encounters "TypeScript error", "type mismatch", asks "how to type this", or any complex typing scenarios requiring advanced TypeScript knowledge.
 model: sonnet
 ---
 

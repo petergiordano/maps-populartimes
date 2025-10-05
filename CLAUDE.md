@@ -421,15 +421,26 @@ maps-populartimes/
 - Running `/status` (use main Claude)
 - Git operations (use main Claude)
 
-### How to Invoke Subagents
+### How Subagents Are Invoked
 
-Simply mention the subagent by name in your request:
+**IMPORTANT FOR CLAUDE**: You should **proactively and automatically** invoke subagents based on the task context, WITHOUT waiting for explicit user request.
 
-```
-I need help from the frontend-developer subagent to create a heatmap component
-```
+**Auto-invocation rules:**
+- User asks to create/modify React components → **Automatically use frontend-developer**
+- User asks to design UI/UX or improve interface → **Automatically use ui-ux-designer**
+- User asks to review code or says "ready to commit" → **Automatically use code-reviewer**
+- User encounters TypeScript errors or complex typing → **Automatically use typescript-pro**
+- User asks to write tests or improve test coverage → **Automatically use test-engineer**
+- User asks to create technical plan or architecture → **Automatically use spec-architect**
 
-I will automatically use the Task tool to invoke the appropriate subagent.
+**Decision flow:**
+1. User describes what they want to do
+2. YOU (Claude) determine which subagent is most appropriate
+3. YOU automatically invoke that subagent via Task tool
+4. Present the subagent's output to the user
+
+**User should NOT need to say**: "I need the frontend-developer subagent..."
+**You should proactively recognize**: "User wants to create a component, I'll use frontend-developer"
 
 ### Subagent Workflow with Spec Kit
 
