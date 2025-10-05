@@ -185,6 +185,37 @@ maps-populartimes/
 3. **Use Git branch name** to find your current feature spec
 4. **Feature numbers** match across branches, specs, and roadmap
 5. **Green checkmarks in roadmap** = completed features
+6. **Use subagents** for specialized tasks (see below)
+
+---
+
+## 🤖 Subagent Quick Reference
+
+This project uses **Claude Code subagents** for specialized expertise.
+
+### Available Subagents (in `.claude/agents/`)
+
+| When you need... | Use this subagent | Example request |
+|------------------|-------------------|-----------------|
+| React component creation | `frontend-developer` | "I need the frontend-developer subagent to create a heatmap" |
+| UI/UX design | `ui-ux-designer` | "I need the ui-ux-designer subagent to design the filter interface" |
+| Code review | `code-reviewer` | "I need the code-reviewer subagent to review before commit" |
+| Complex TypeScript types | `typescript-pro` | "I need the typescript-pro subagent to fix these type errors" |
+| Writing tests | `test-engineer` | "I need the test-engineer subagent to write tests for this" |
+| Feature architecture | `spec-architect` | "I need the spec-architect subagent to create a technical plan" |
+
+### How to Use
+
+**Just mention the subagent by name:**
+```
+I need help from the frontend-developer subagent to create a comparison table
+```
+
+Claude will automatically invoke the appropriate subagent.
+
+**Detailed guides:**
+- `docs/subagents/README.md` - Complete subagent reference
+- `.specify/guides/subagent-workflow.md` - Workflow examples
 
 ---
 

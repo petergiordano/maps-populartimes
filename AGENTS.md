@@ -488,8 +488,77 @@ npm run preview  # Preview production build locally
 
 ---
 
+## Subagent System
+
+This project uses **Claude Code subagents** for specialized domain expertise.
+
+### Available Subagents
+
+Located in `.claude/agents/` directory:
+
+| Subagent | Purpose | Model | When to Use |
+|----------|---------|-------|-------------|
+| **frontend-developer** | React 19 components, Recharts visualizations, Tailwind CSS | Sonnet | Creating UI components, implementing visualizations |
+| **ui-ux-designer** | Interface design, accessibility, responsive layouts | Sonnet | Designing features, ensuring WCAG compliance |
+| **code-reviewer** | Code quality, standards enforcement (AGENTS.md) | Sonnet | Before commits, during PR reviews |
+| **typescript-pro** | Advanced TypeScript patterns, complex types | Sonnet | Complex typing scenarios, generic components |
+| **test-engineer** | Comprehensive testing, test coverage | Sonnet | Writing tests, improving coverage |
+| **spec-architect** | Feature architecture, technical planning | Opus | Creating plan.md, architecture decisions |
+
+### How to Use Subagents
+
+**Simply mention the subagent by name:**
+```
+I need help from the frontend-developer subagent to create a heatmap component
+```
+
+The main Claude Code agent will automatically invoke the appropriate subagent using the Task tool.
+
+### Subagent Integration with Spec Kit
+
+```
+/specify → spec.md (business requirements)
+/plan → spec-architect subagent → plan.md (technical design)
+/tasks → tasks.md (actionable work items)
+/implement →
+  - Frontend tasks → frontend-developer subagent
+  - Testing tasks → test-engineer subagent
+  - Code review → code-reviewer subagent
+```
+
+### When to Use Subagents vs Main Agent
+
+**✅ Use Subagents For:**
+- Creating React components
+- Designing feature UX
+- Reviewing code quality
+- Complex TypeScript types
+- Writing tests
+- Architecting features
+
+**Use Main Agent For:**
+- Project management (/status, git, docs)
+- File reading and navigation
+- User interaction
+- Coordinating between subagents
+- Final integration and commits
+
+### Documentation
+
+**Detailed guides:**
+- `docs/subagents/README.md` - Complete subagent guide
+- `.specify/guides/subagent-workflow.md` - Workflow examples
+- `.claude/agents/[name].md` - Individual subagent definitions
+
+**Quick reference:**
+- Each subagent is customized for our tech stack (React 19, Vite 7.1, Recharts 3.2)
+- Subagents reference AGENTS.md for code style
+- Subagents reference existing patterns (FacilityModal, MiniGraph)
+
+---
+
 **Project Owner:** Peter Giordano - Pickleball Clubhouse Chicago
 **Tech Stack:** React 19 + TypeScript 5.9 + Vite 7.1 + Recharts 3.2
 **Deployment:** Vercel (vercel.com)
-**Methodology:** Spec Kit (spec-driven development)
+**Methodology:** Spec Kit (spec-driven development) + Subagent specialization
 **Last Updated:** 2025-10-05

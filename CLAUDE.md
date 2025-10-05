@@ -393,6 +393,60 @@ maps-populartimes/
 
 ---
 
+## 🤖 Using Subagents (Advanced)
+
+**What are subagents?** Specialized AI agents with domain expertise for specific tasks.
+
+**Available subagents** (in `.claude/agents/`):
+1. **frontend-developer** - React 19 components, Recharts visualizations, Tailwind layouts
+2. **ui-ux-designer** - Interface design, accessibility, responsive layouts
+3. **code-reviewer** - Code quality, standards enforcement, security checks
+4. **typescript-pro** - Advanced TypeScript patterns, complex types, strict mode
+5. **test-engineer** - Comprehensive testing, test coverage, quality validation
+6. **spec-architect** - Feature architecture, technical planning, design decisions
+
+### When to Use Subagents
+
+**✅ Use subagents for:**
+- Creating React components → frontend-developer
+- Designing feature UX → ui-ux-designer
+- Reviewing code quality → code-reviewer
+- Complex TypeScript types → typescript-pro
+- Writing tests → test-engineer
+- Architecting features → spec-architect
+
+**❌ Don't use subagents for:**
+- Simple questions (use main Claude)
+- Reading files (use main Claude)
+- Running `/status` (use main Claude)
+- Git operations (use main Claude)
+
+### How to Invoke Subagents
+
+Simply mention the subagent by name in your request:
+
+```
+I need help from the frontend-developer subagent to create a heatmap component
+```
+
+I will automatically use the Task tool to invoke the appropriate subagent.
+
+### Subagent Workflow with Spec Kit
+
+```
+/specify → spec.md created
+/plan → spec-architect designs architecture → plan.md
+/tasks → tasks.md created
+/implement →
+  - Frontend tasks → frontend-developer subagent
+  - Testing tasks → test-engineer subagent
+  - Code review → code-reviewer subagent
+```
+
+**More details**: See `docs/subagents/README.md` or `.specify/guides/subagent-workflow.md`
+
+---
+
 **Last Updated**: 2025-10-05
 **Project Owner**: Peter Giordano - Pickleball Clubhouse Chicago
 **Deployment**: Vercel (vercel.com)
